@@ -84,7 +84,7 @@ export default function Checkout({ cart }) {
                 <div className="col-md-6">
                     <h4>Shipping Details</h4>
                     <form
-                        action="https://formsubmit.co/el/padipu"
+                        action="https://formspree.io/f/meokzked"
                         method="POST"
                         className="p-4 border rounded"
                     >
@@ -168,7 +168,7 @@ export default function Checkout({ cart }) {
                                 <option value="cash">Pay on Delivery</option>
                             </select>
                         </div>
-                        <button type="post" className="btn btn-success w-100">
+                        <button type="submit" className="btn btn-success w-100">
                             Complete Checkout
                         </button>
                     </form>
