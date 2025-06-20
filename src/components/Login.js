@@ -5,10 +5,10 @@ export default function Login({ onLogin }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (password === "1234") {
+        if (password === "1923") {
             onLogin();
         } else {
-            alert("Wrong Password");
+            alert("29 Ekim hangi yıl");
         }
     };
 

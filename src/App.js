@@ -3,6 +3,7 @@ import Login from "./components/Login";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -83,6 +84,7 @@ function App() {
 
   return (
     <>
+      <Analytics />
       {/* Navbar */}
       <nav className="navbar navbar-light bg-light fixed-top">
         <div className="container-fluid">
