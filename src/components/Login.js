@@ -25,13 +25,13 @@ export default function Login({ onLogin }) {
                         maxLength={4}
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        placeholder="Password to Enter"
+                        placeholder="Siteye giriș için șifreyi giriniz"
                         className="form-control text-center"
                         autoFocus
                     />
                 </div>
                 <button type="submit" className="btn btn-primary w-100">
-                    Enter
+                    Giriș Yap
                 </button>
             </form>
         </div>

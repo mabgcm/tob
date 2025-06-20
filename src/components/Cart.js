@@ -5,20 +5,20 @@ export default function Cart({ cart, goToCheckout }) {
 
     return (
         <div>
-            <h2>Cart</h2>
-            {cart.length === 0 && <p>Your cart is empty.</p>}
+            <h4>Sepet Tutari</h4>
+            {cart.length === 0 && <p>Sepetiniz boş.</p>}
             {cart.map((item) => (
                 <div key={item.id} className="mb-2">
                     {item.name} x {item.quantity} = {item.price * item.quantity} $
                 </div>
             ))}
-            <p className="fw-bold">Total: {total} $</p>
+            <p className="fw-bold">Toplam: {total} $</p>
             <button
                 onClick={goToCheckout}
                 disabled={cart.length === 0}
                 className="btn btn-primary w-100"
             >
-                Check Out
+                Siparişi Tamamla
             </button>
         </div>
     );
