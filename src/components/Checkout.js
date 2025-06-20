@@ -42,10 +42,10 @@ export default function Checkout({ cart, goBackToProducts }) {
 
         if (isGTA) {
             // Eğer şehir GTA içindeyse ve sipariş 100$ üstüyse kargo ücretsiz, değilse 25$
-            setShippingCost(subtotal > 100 ? 0 : 25);
+            setShippingCost(subtotal > 100 ? 0 : 10);
         } else {
             // GTA dışı şehirlerde her zaman 25$
-            setShippingCost(25);
+            setShippingCost(15);
         }
     };
 
